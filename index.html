@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pink To-Do App</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>My To-Do List 🎀</h1>
+
+        <!-- Input Section -->
+        <div class="todo-input">
+            <input type="text" id="taskInput" placeholder="Enter your task..." />
+
+            <input type="datetime-local" id="taskDate">
+
+            <select id="priority">
+                <option value="Low">Low Priority</option>
+                <option value="Medium">Medium Priority</option>
+                <option value="High">High Priority</option>
+            </select>
+
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <!-- Pending Tasks -->
+        <div class="task-section">
+            <h2>Pending Tasks 💗</h2>
+            <ul id="pendingTasks"></ul>
+        </div>
+
+        <!-- Completed Tasks -->
+        <div class="task-section">
+            <h2>Completed Tasks ✅</h2>
+            <ul id="completedTasks"></ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
