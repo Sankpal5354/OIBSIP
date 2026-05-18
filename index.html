@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <div class="form-box">
+
+        <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+
+        <h1>Secure Login 🔐</h1>
+        <p class="subtitle">Create account or login securely</p>
+
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="email" id="email" placeholder="Enter Email">
+
+        <div class="password-box">
+            <input type="password" id="password" placeholder="Enter Password">
+            <span onclick="togglePassword()">👁</span>
+        </div>
+
+        <p class="hint">Password must contain minimum 6 characters</p>
+
+        <div class="buttons">
+            <button onclick="registerUser()">Register</button>
+            <button onclick="loginUser()">Login</button>
+        </div>
+
+        <p id="message"></p>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

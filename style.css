@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+}
+
+.container{
+    width: 100%;
+    padding: 20px;
+}
+
+.form-box{
+    position: relative;
+    max-width: 430px;
+    margin: auto;
+    background: white;
+    padding: 38px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.22);
+    text-align: center;
+    animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.theme-btn{
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+h1{
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.subtitle{
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+input{
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 2px solid #bfdbfe;
+    border-radius: 14px;
+    outline: none;
+    font-size: 15px;
+}
+
+input:focus{
+    border-color: #2563eb;
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.18);
+}
+
+.password-box{
+    position: relative;
+}
+
+.password-box input{
+    padding-right: 45px;
+}
+
+.password-box span{
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    cursor: pointer;
+}
+
+.hint{
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.buttons{
+    display: flex;
+    gap: 12px;
+}
+
+button{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 14px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+#message{
+    margin-top: 18px;
+    font-weight: 500;
+}
+
+.success{
+    color: green;
+}
+
+.error{
+    color: red;
+}
+
+/* Dashboard */
+.dashboard-card{
+    max-width: 650px;
+}
+
+.profile-icon{
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.dashboard-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.dash-box{
+    background: #eff6ff;
+    padding: 18px;
+    border-radius: 18px;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+/* Dark Mode */
+body.dark{
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+body.dark .form-box{
+    background: #111827;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+body.dark h1{
+    color: #60a5fa;
+}
+
+body.dark .subtitle,
+body.dark .hint{
+    color: #cbd5e1;
+}
+
+body.dark input{
+    background: #1f2937;
+    color: white;
+    border-color: #334155;
+}
+
+body.dark input::placeholder{
+    color: #94a3b8;
+}
+
+body.dark button{
+    background: #3b82f6;
+}
+
+body.dark button:hover{
+    background: #2563eb;
+}
+
+body.dark .dash-box{
+    background: #1f2937;
+    color: #93c5fd;
+}
+
+@media(max-width: 500px){
+    .form-box{
+        padding: 30px 22px;
+    }
+
+    .buttons,
+    .dashboard-grid{
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+}
