@@ -20,8 +20,8 @@
 
         <div class="dashboard-grid">
             <div class="dash-box">🔐 Secure Login</div>
-            <div class="dash-box"> Local Storage</div>
-            <div class="dash-box"> Dark Mode</div>
+            <div class="dash-box">💾 Local Storage</div>
+            <div class="dash-box">🌙 Dark Mode</div>
         </div>
 
         <button onclick="logoutUser()">Logout</button>
@@ -39,7 +39,7 @@
 
     if(user){
         document.getElementById("userInfo").innerText =
-            "Hello, " + user.username + "  You are logged in securely.";
+            "Hello, " + user.username + " 👋 You are logged in securely.";
     }
 
     function logoutUser(){
